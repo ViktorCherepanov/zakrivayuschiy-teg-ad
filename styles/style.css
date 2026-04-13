@@ -157,15 +157,6 @@
   border: none;
 }
 
-.button__text {
-  font-family: var(--pixel-font), sans-serif;
-  font-size: 14px;
-  color: var(--difference-text-color);
-  mix-blend-mode: difference;
-  position: relative;
-  z-index: 1;
-}
-
 .card__icon-button {
   border: 2px solid transparent;
   cursor: pointer;
@@ -180,14 +171,6 @@
   transition: outline 0.3s ease, border-color 0.3s ease;
 }
 
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-  border-color: var(--text-color);
-}
-
 .button {
   border: 2px solid #000;
   background-color: var(--background-color);
@@ -210,22 +193,6 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--text-color);
-}
-
-.button {
-  border: 2px solid #000;
-  background-color: var(--background-color);
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.card__like-button {
-  width: 130px;
-  height: 38px;
 }
 
 .button:focus {
@@ -261,7 +228,7 @@
 }
 
 .filter_hue-rotate {
-  filter: hue-rotate(-60deg);
+  filter: hue-rotate(-60deg) brightness(99%);
 }
 
 .filter_invert {
@@ -296,12 +263,6 @@
   mix-blend-mode: difference;
   position: relative;
   z-index: 2;
-}
-
-.button__text {
-  font-family: var(--pixel-font);
-  font-weight: var(--slim-font-weight);
-  font-size: 14px;
 }
 
 .button__text.form-button-text {
@@ -363,6 +324,16 @@
   font-size: 14px;
   display: flex;
   justify-content: center;
+}
+
+.button__text {
+  font-family: var(--pixel-font), sans-serif;
+  font-weight: var(--slim-font-weight);
+  font-size: 14px;
+  color: var(--difference-text-color);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
 }
 
 @media (width<=375px) {
