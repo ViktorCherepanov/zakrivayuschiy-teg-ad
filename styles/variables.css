@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --basic-font: 'Inter';
+  --pixel-font: 'PressStart2P';
+  --slim-font-weight: 400;
+  --bold-font-weight: 700;
+  --background-color: #FFF;
+  --gradient-color-first: #d3d3d3;
+  --gradient-color-second: #e7e7e7;
+  --gradient-color-third: #1a1a1a;
+  --text-color: #000;
+  --difference-text-color: #fff;
+  --element-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+}
